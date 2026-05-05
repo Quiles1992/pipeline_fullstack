@@ -1,4 +1,4 @@
-const e = require('cors');
+
 const http = require('http');
 
 const options = {
@@ -16,7 +16,7 @@ const req = http.request(options, (res) => {
         console.log('Test Fallo.');
         process.exit(1);
     }
-});//cambios
+});
 
 req.on('error', () => {
     console.log('Error al conectar con la API.');
@@ -25,5 +25,3 @@ req.on('error', () => {
 
 req.end();
 
-
-//comentario
